@@ -1,0 +1,39 @@
+.sidebar-item {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    background: var(--color-background-primary);
+    border-color: var(--color-border-tertiary);
+  }
+
+  &--active {
+    background: var(--color-background-primary);
+    border-color: var(--color-border-secondary);
+  }
+
+  &__company {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+  }
+
+  &__role {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    margin-top: 2px;
+  }
+
+  &__badge {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 99px;
+    background: var(--color-background-tertiary);
+    color: var(--color-text-secondary);
+  }
+}
